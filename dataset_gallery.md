@@ -59,15 +59,15 @@ title: Interactive Dataset Gallery
         // Directory-specific content
         const directoryPath = pathArray[pathArray.length - 1];
         if (directoryPath === 'root') {
-            galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\',\'subdir1\'])">Natural</div>';
+            galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\',\'Natural\'])">Natural</div>';
             galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\',\'subdir2\'])">Manufactured</div>';
-        } else if (directoryPath === 'subdir1') {
-            galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\',\'subdir1\',\'subdir1.1\'])">Sagui</div>';            
+        } else if (directoryPath === 'Natural') {
+            galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\',\'Natural\',\'Sagui\'])">Sagui</div>';            
             galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\'])">Back to Root</div>';
-        } else if (directoryPath === 'subdir1.1') {
+        } else if (directoryPath === 'Sagui') {
             galleryRoot.innerHTML += '<img class="gallery-image" src="https://drive.google.com/thumbnail?id=1uTwbW5jrwS7s80ChtzwjefIILOC_T15P" alt="Image 1">';
             galleryRoot.innerHTML += '<img class="gallery-image" src="https://drive.google.com/uc?export=view&id=YOUR_IMAGE_ID_2" alt="Image 2">';
-            galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\', \'subdir1\'])">Back to "Natural"</div>';
+            galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\', \'Natural\'])">Back to "Natural"</div>';
         } else if (directoryPath === 'subdir2') {
             galleryRoot.innerHTML += '<img class="gallery-image" src="https://drive.google.com/uc?export=view&id=YOUR_IMAGE_ID_3" alt="Image 3">';
             galleryRoot.innerHTML += '<img class="gallery-image" src="https://drive.google.com/uc?export=view&id=YOUR_IMAGE_ID_4" alt="Image 4">';
