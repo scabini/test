@@ -19,7 +19,7 @@ title: Interactive Dataset Gallery
     }
     .gallery-image {
         margin: 5px;
-        border: 2px solid #ccc;
+        border: 0px solid #ccc;
         max-width: 200px;
         height: auto;
     }
@@ -65,8 +65,8 @@ title: Interactive Dataset Gallery
             galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\',\'Natural\',\'Sagui\'])">Sagui</div>';            
             //galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\'])">Back to Root</div>';
         } else if (directoryPath === 'Sagui') {
-            galleryRoot.innerHTML += '<a href="https://drive.google.com/file/d/1uTwbW5jrwS7s80ChtzwjefIILOC_T15P/view?usp=drive_link" target="_blank"><img class="gallery-image" src="https://drive.google.com/thumbnail?id=1uTwbW5jrwS7s80ChtzwjefIILOC_T15P" alt="Image 1"></a>';
-            galleryRoot.innerHTML += '<a href="https://drive.google.com/file/d/1YeEan01FkK-LcBF8KN3_WzNFn3SOW9Ua/view?usp=drive_link" target="_blank"><img class="gallery-image" src="https://drive.google.com/thumbnail?id=1YeEan01FkK-LcBF8KN3_WzNFn3SOW9Ua" alt="Image 2"></a>';
+            galleryRoot.innerHTML += '<a href="https://drive.google.com/file/d/1uTwbW5jrwS7s80ChtzwjefIILOC_T15P/view?usp=drive_link" target="_blank"><img class="gallery-image" src="https://drive.google.com/thumbnail?id=1uTwbW5jrwS7s80ChtzwjefIILOC_T15P" alt="Source"></a>';
+            galleryRoot.innerHTML += '<a href="https://drive.google.com/file/d/1YeEan01FkK-LcBF8KN3_WzNFn3SOW9Ua/view?usp=drive_link" target="_blank"><img class="gallery-image" src="https://drive.google.com/thumbnail?id=1YeEan01FkK-LcBF8KN3_WzNFn3SOW9Ua" alt="Sample 1"></a>';
             //galleryRoot.innerHTML += '<div class="directory-link" onclick="loadDirectory([\'root\', \'Natural\'])">Back to "Natural"</div>';
         } else if (directoryPath === 'Manufactured') {
             galleryRoot.innerHTML += '<img class="gallery-image" src="https://drive.google.com/uc?export=view&id=YOUR_IMAGE_ID_3" alt="Image 3">';
